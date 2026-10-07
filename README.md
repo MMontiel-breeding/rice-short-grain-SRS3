@@ -72,7 +72,7 @@ This repository is intended to provide transparency and reproducibility for all 
 Maria Montiel  
 Rice Breeding Program  
 H. Rouse Caffey Rice Research Station  
-LSU AgCenter
+
 
 GitHub Repository:
 https://github.com/MMontiel-breeding/rice-short-grain-SRS3
