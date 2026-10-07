@@ -1,0 +1,19 @@
+# Data
+
+This folder contains the phenotypic, genotypic, and mapping datasets used in the study.
+
+Data may include:
+
+- Grain measurement datasets
+- F₂ segregation datasets
+- F₃ progeny-test datasets
+- Marker genotype data
+- Fine-mapping datasets
+- Recombinant classifications
+- Candidate-marker validation datasets
+- Germplasm survey results
+- Supporting metadata and sample identifiers
+
+Raw and processed data files will be organized as they become available and are finalized for publication.
+
+Data are provided to support reproducibility of the analyses reported in the manuscript.
