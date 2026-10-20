@@ -54,7 +54,7 @@ Analysis scripts are provided in R. Each script addresses a defined part of the 
    - Calculates group summaries, Welch's two-sample t-tests, mean and percentage differences, and Benjamini–Hochberg-adjusted P-values across the nine trait-by-processing comparisons.
    - Generates the grain morphology summary in S1 Table and the boxplots in S1 Fig, together with quality-control records. These comparisons describe individual measured grains and do not establish independent plant-level biological replication.
 
-2. **Puerto Rico genotyping — `02_Puerto_Rico_Original_Population_Genotyping_Analysis.R`**
+2. ** Original Populations from Puerto Rico genotyping — `02_Puerto_Rico_Original_Population_Genotyping_Analysis.R`**
 
    - **Inputs:** S4 Table and the LSU500 marker dictionary in S3 Table.
    - Standardizes genotype calls, treats failed calls as missing, and recognizes reversed heterozygote calls as equivalent.
@@ -62,7 +62,7 @@ Analysis scripts are provided in R. Each script addresses a defined part of the 
    - Reports evaluable markers, matching and differing modal genotypes, and concordance. This comparison describes group-level marker similarity, not pairwise whole-genome identity.
    - The manuscript analysis retains all 98 plants. The optional exclusion of two lower-completeness samples must remain disabled for that analysis. Results are displayed in R; this script does not perform a phenotype-segregation χ² test.
 
-3. **Initial IC206 mapping and segregation — `03_F2_147_Segregation_and_LSU500_Association_Analysis.R`**
+3. **Initial F2 Population mapping and segregation — `03_F2_147_Segregation_and_LSU500_Association_Analysis.R`**
 
    - **Inputs:** the combined phenotype/genotype file for the 147 plants in S5 Table and the marker dictionary in S3 Table. A separate phenotype-only input is unnecessary.
    - Tests observed WT and SG counts against the expected 3 WT:1 SG ratio using Pearson's χ² goodness-of-fit test.
@@ -72,23 +72,20 @@ Analysis scripts are provided in R. Each script addresses a defined part of the 
    - Produces results supporting S6 Table, the segregation plot in S2 Fig, and the logistic association scan in S3 Fig. The dashed association threshold is based on 0.05 divided by the number of tested markers.
    - The MAF switch permits a separate run without MAF filtering. Automatic sensitivity analysis and export of the complete S6 workbook are being incorporated into the final script; current versions may retain results only as R objects.
 
-4. **Avant inheritance — `04_Avant_F2_Phenotypic_Segregation_Analysis.R`**
+4. **Population crossed with japonica variety (Avant) inheritance — `04_Avant_F2_Phenotypic_Segregation_Analysis.R`**
 
    - **Input:** `Table_S7_Avant_F2_Phenotypes.csv`.
    - Counts WT and SG phenotypes among 100 F₂ plants and calculates expected counts under a 3:1 ratio.
    - Performs Pearson's χ² goodness-of-fit test and displays observed counts, expected counts, the χ² statistic, degrees of freedom, and P-value.
    - Supports the second-background inheritance analysis reported in the manuscript. This script uses base R and does not require additional packages.
 
-5. **Expanded IC206 segregation — `05_IC206_F2_Complete_Phenotypic_Segregation_Analysis.R`**
+5. **Expanded  IC206 F2 Population  segregation — `05_IC206_F2_Complete_Phenotypic_Segregation_Analysis.R`**
 
    - **Input:** the expanded-population phenotype file, pending reconciliation. The earlier file was provisionally named `Table_S8_IC206_F2_Complete_Phenotypes.xlsx`.
    - Checks plant identifiers, duplicate records, and phenotype labels before calculating observed and expected counts.
    - Performs Pearson's χ² goodness-of-fit test against 3 WT:1 SG, with a complementary exact binomial test and confidence interval for the SG proportion.
    - Displays a phenotype-count plot and a statistical summary. It does not infer recombination breakpoints or analyze PACE associations.
    - The current script expects 1,031 records. Its expected sample size and input-column mapping must be updated to the verified final dataset before rerunning it; the new 1,051-plant working files are not yet direct replacements.
-
-Scripts for PACE recombinant classification, increased-resolution mapping, F₃ progeny testing, and candidate-variant surveys will be documented when their review is complete.
-
 
 ### Supplementary Information
 
@@ -112,8 +109,6 @@ Supplementary materials associated with the manuscript are provided in this repo
 
 9. **S3 Fig** — `Supplemental_Figure_S3_LSU500_Association.png`. Logistic single-marker association scan with the Bonferroni threshold.
 
-
-Further materials will include recombinant classifications, progeny-test records, and candidate-variant evidence. Final table/figure numbering and citations will be reconciled with the revised manuscript.
 
 ## Whole-Genome Sequencing Information
 
