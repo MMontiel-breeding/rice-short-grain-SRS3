@@ -15,12 +15,6 @@ WT refers to the wild-type, long-grain phenotype, and SG refers to the short-gra
 
 This repository is currently under development and will continue to be updated as manuscript revisions, supplementary materials, and supporting datasets are finalized.
 
-The file names below provide the intended naming convention for the repository. Some files are being renamed or updated locally and may not yet be available under these names. Supplementary numbering remains provisional until all materials are finalized.
-
-The initial IC206 mapping analysis uses 147 F₂ plants. The expanded IC206 dataset is being reconciled with the original records; the current combined working files contain 1,051 plants and should not yet be treated as the final manuscript analysis dataset.
-
-Additional files, sequencing information, supplementary tables, and updated scripts will be added as they are verified.
-
 ## Repository Contents
 
 ### Data
