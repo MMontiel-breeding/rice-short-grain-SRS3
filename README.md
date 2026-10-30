@@ -25,4 +25,4 @@ This repository contains the following R scripts and the input datasets needed t
 2. Marker information for the LSU500 SNP panel.
 3. Phenotypes and LSU500 genotype calls for the initial 147 IC206-derived F₂ plants.
 4. Grain phenotypes for the 100-plant Avant-derived F₂ population.
-5. Grain phenotypes and chromosome 5 marker genotypes from the expanded 1,031-plant IC206-derived F₂ population.
+5. Grain phenotypes from the expanded 1,031-plant IC206-derived F₂ population.
