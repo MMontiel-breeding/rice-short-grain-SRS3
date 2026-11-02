@@ -6,7 +6,7 @@ This repository contains the data, metadata, supporting tables, and R scripts as
 
 The study characterizes a recessive short-grain (SG) phenotype identified in the long-grain wild-type (WT) rice breeding line RU2002174. The analyses include grain-morphology comparisons, phenotypic segregation, LSU500 marker association, recombinant fine-mapping, F3 progeny testing, whole-genome sequence analysis, candidate-variant identification, and evaluation of the candidate *SRS3* variant in additional rice germplasm.
 
-Supplementary tables retain the same numbering and nomenclature used in the manuscript. In the repository, each Supporting Table is provided as an individual Excel file named according to its manuscript designation (e.g., `S1_Table.xlsx`, `S2_Table.xlsx`, `S8a_Table.xlsx`). The full title and description of each table are provided below and correspond directly to the Supporting Information cited in the manuscript. Additional datasets required to reproduce the reported analyses but not included as Supporting Tables in the manuscript are designated separately as S1 Data, S2 Data, etc.
+Supplementary tables retain the same numbering and nomenclature used in the manuscript. In the repository, each Supporting Table is provided as an individual file named according to its manuscript designation (e.g., `S1_Table.xlsx`, `S2_Table.xlsx`, `S6_Table.csv`, `S8_Table.xlsx`). The full title and description of each table are provided below and correspond directly to the Supporting Information cited in the manuscript. Additional datasets required to reproduce the reported analyses but not included as Supporting Tables in the manuscript are designated separately as S1 Data, S2 Data, etc.
 
 Required R packages are specified within each script. Scripts check for the packages required for the corresponding analysis before execution. Package installation is not performed automatically.
 
@@ -18,22 +18,22 @@ The repository and article Supporting Information provide the data and metadata 
 
 - `01_Grain_Morphology_QC_and_Statistical_Analysis_Corrected.R`  
   Performs grain-measurement quality control, removes statistical outliers using Tukey's 1.5 × interquartile-range criterion, summarizes grain length, width, and length-to-width ratio, and compares WT and SG samples using two-sided Welch's t-tests with Benjamini-Hochberg adjustment.  
-  **Input:** S1 Data (raw grain morphology measurements).  
-  **Output:** S4 Table (grain morphology statistics and quality-control results).
+  **Input:** `datasets/S1_Data_Grain_Morphology_Measurements.xlsx`  
+  **Output:** `datasets/S4_Table.xlsx`
 
 - `02_F2_147_Segregation_and_LSU500_Association_Analysis.R`  
   Evaluates 3:1 phenotypic segregation in the initial 147-plant IC206 × RU2002174 SG F₂ population and conducts LSU500 single-marker association analysis using logistic-regression likelihood-ratio tests, Bonferroni and Benjamini-Hochberg corrections, McFadden's pseudo-R², and phenotype proportions by genotype class.  
-  **Inputs:** S1 Table (LSU500 marker information) and S5 Table (phenotypes and LSU500 genotypes of the 147 F₂ plants).  
-  **Outputs:** Segregation results reported in S5 Table; LSU500 marker quality-control and association results reported in S7 Table; and the association results represented in S1 Fig.
+  **Inputs:** `datasets/S1_Table.xlsx` and `datasets/S5_Table.xlsx`  
+  **Outputs:** Segregation results reported in `datasets/S5_Table.xlsx`, marker quality-control and association results in `datasets/S7_Table.xlsx`, and the association results represented in S1 Fig.
 
 - `03_Avant_F2_Phenotypic_Segregation_Analysis.R`  
   Evaluates phenotypic segregation in the 100-plant Avant × RU2002174 SG F₂ population using a chi-square goodness-of-fit test for the expected 3:1 WT:SG ratio.  
-  **Input:** S6 Table (Avant × RU2002174 SG F₂ phenotypes).  
+  **Input:** `datasets/S6_Table.csv`  
   **Output:** Chi-square segregation statistics displayed in the R console and reported in S6 Table and the manuscript.
 
 - `04_F2_Complete1031_Phenotypic_Segregation_Analysis.R`  
   Evaluates phenotypic segregation in the complete 1,031-plant IC206 × RU2002174 SG F₂ population using a chi-square goodness-of-fit test for the expected 3:1 WT:SG ratio.  
-  **Input:** S2 Data (phenotypes of the complete 1,031-plant F₂ population).  
+  **Input:** `datasets/S2_Data_Complete_1031_F2_Phenotypes.xlsx`  
   **Output:** Chi-square segregation statistics displayed in the R console and reported in the manuscript.
 
 ### Data and supporting information
@@ -94,11 +94,3 @@ When using data or analysis scripts from this repository, please cite the associ
 
 Montiel, M., Angira, B., Richards, J. K., & Famoso, A. Genetic mapping of a putative spontaneous short-grain mutation identifies a predicted loss-of-function allele of *SRS3* in rice. Manuscript submitted to PLOS ONE.
 
-## Contact
-
-For questions about the repository or associated analyses, contact:
-
-**Adam Famoso**  
-H. Rouse Caffey Rice Research Station  
-Louisiana State University Agricultural Center  
-Email: afamoso@agcenter.lsu.edu
