@@ -6,6 +6,8 @@ This repository contains the data, metadata, supporting tables, and R scripts as
 
 The study characterizes a recessive short-grain (SG) phenotype identified in the long-grain wild-type (WT) rice breeding line RU2002174. The analyses include grain-morphology comparisons, phenotypic segregation, LSU500 marker association, recombinant fine-mapping, F3 progeny testing, whole-genome sequence analysis, candidate-variant identification, and evaluation of the candidate *SRS3* variant in additional rice germplasm.
 
+Supplementary tables retain the same numbering and nomenclature used in the manuscript. References to S1–S13 Tables in this repository therefore correspond directly to the Supporting Information cited in the manuscript. Additional datasets required to reproduce the reported analyses, but not included as Supporting Tables in the manuscript, are designated sequentially as Data S1, Data S2, etc., within this repository.
+
 ## Repository contents
 
 ### R scripts
