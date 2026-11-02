@@ -8,6 +8,8 @@ The study characterizes a recessive short-grain (SG) phenotype identified in the
 
 Supplementary tables retain the same numbering and nomenclature used in the manuscript. References to S1–S13 Tables in this repository therefore correspond directly to the Supporting Information cited in the manuscript. Additional datasets required to reproduce the reported analyses, but not included as Supporting Tables in the manuscript, are designated sequentially as Data S1, Data S2, etc., within this repository.
 
+The repository and article Supporting Information provide the materials underlying the reported analyses, including: (do it as a paragrapah and check if I have everything): Grain-measurement data and quality-control records for rough, brown, and milled rice. F2 and F3 phenotypes and marker genotypes. Recombinant classifications and F3 progeny-test results used for fine-mapping. LSU500 and PACE marker metadata, genomic positions, alleles, and primer sequences, including the LSU1761 candidate-variant assay. Whole-genome sequencing metrics and candidate-site quality metrics. Filtered SNP and short-indel data from the chromosome 5 fine-mapped interval. The annotated interval-variant table used to identify the candidate G-to-T substitution at chromosome 5 position 3,204,936. Pairwise SNP identity results for the seven sequenced samples. Candidate-variant genotypes and phenotype-concordance results for F2 recombinants. Native Trait Panel survey results and the IRRI SNP-Seek 3K regional query. Statistical-analysis scripts used for the grain-morphology, segregation, and LSU500 association analyses.
+
 ## Repository contents
 
 ### R scripts
@@ -26,37 +28,41 @@ Supplementary tables retain the same numbering and nomenclature used in the manu
 
 ### Data and supporting information
 
-The repository and article Supporting Information provide the materials underlying the reported analyses, including:
-
-- Grain-measurement data and quality-control records for rough, brown, and milled rice.
-- F2 and F3 phenotypes and marker genotypes.
-- Recombinant classifications and F3 progeny-test results used for fine-mapping.
-- LSU500 and PACE marker metadata, genomic positions, alleles, and primer sequences, including the LSU1761 candidate-variant assay.
-- Whole-genome sequencing metrics and candidate-site quality metrics.
-- Filtered SNP and short-indel data from the chromosome 5 fine-mapped interval.
-- The annotated interval-variant table used to identify the candidate G-to-T substitution at chromosome 5 position 3,204,936.
-- Pairwise SNP identity results for the seven sequenced samples.
-- Candidate-variant genotypes and phenotype-concordance results for F2 recombinants.
-- Native Trait Panel survey results and the IRRI SNP-Seek 3K regional query.
-- Statistical-analysis scripts used for the grain-morphology, segregation, and LSU500 association analyses.
-
-The merged Supporting Information workbook contains Tables S1-S13. Supporting figures are provided with the article.
+S1 Data. Grain morphology measurements. Raw individual-grain measurements of length, width, and length-to-width ratio for rough, brown, and milled rice from wild-type (WT) and short-grain (SG) samples. These data are used as the input for the grain morphology quality-control and statistical analyses reported in S4 Table.
 
 ## Supporting tables
 
-- **S1 Table:** LSU500 marker information.
-- **S2 Table:** PACE marker information and primer sequences.
-- **S3 Table:** LSU500 genotypes for RU2002174 SG, WT, and historical samples.
-- **S4 Table:** Grain-morphology measurements, quality control, summary statistics, and exploratory WT-SG comparisons.
-- **S5 Table:** Initial 147-plant IC206-derived F2 population and segregation analysis.
-- **S6 Table:** Avant-derived F2 population and segregation analysis.
-- **S7 Table:** LSU500 marker filtering and single-marker association results.
-- **S8a-S8c Tables:** Expanded F2 mapping, recombinant classifications, high-resolution mapping, and F3 progeny tests.
-- **S9 Table:** Whole-genome sequencing and candidate-site metrics.
-- **S10 Table:** Pairwise SNP identity among the seven sequenced samples.
-- **S11 Table:** Filtered and annotated variants in the chromosome 5 fine-mapped interval.
-- **S12a-S12b Tables:** LSU1761 genotype-phenotype concordance and Native Trait Panel survey.
-- **S13 Table:** IRRI SNP-Seek 3K regional query results.
+- **S1 Table. Marker information for the LSU500 AmpSeq panel.** Marker identifiers, chromosomes, physical positions in the Nipponbare IRGSP-1.0 reference genome, and designated alleles for the 550 SNP markers included in the LSU500 panel.
+
+- **S2 Table. PACE markers and primer sequences used for chromosome 5 fine-mapping and candidate-variant genotyping.** The table provides marker numbers, LSU assay identifiers, chromosome positions in the Nipponbare IRGSP-1.0 reference genome, parental alleles, and allele-specific and common primer sequences. LSU1761 was developed in this study to genotype the candidate G→T substitution in SRS3 at chromosome 5 position 3,204,936 bp.
+
+- **S3 Table. LSU500 genotypes used to compare short-grain, wild-type, and historical RU2002174 samples.** Genotypes are reported for three SG and nine WT plants selected from one segregating RU2002174 panicle row in the 2019–2020 Puerto Rico winter nursery and for six RU2002174 samples genotyped in breeding trials from 2018 through 2020. Of the 550 markers assayed, 18 were excluded because they had missing calls in at least five samples, and five were excluded because at least nine samples had heterozygous calls. Of the remaining 527 markers, 130 were classified as heterogeneous among the six historical RU2002174 samples. The remaining markers were used to compare the SG and WT plants with the RU2002174 consensus genotype.
+
+- **S4 Table. Grain morphology of wild-type RU2002174 and the RU2002174 short-grain mutant.** Grain length, width, and length-to-width ratio are summarized for rough, brown, and milled rice. Comparisons used two-sided Welch’s t-tests with Benjamini–Hochberg adjustment across the nine trait-by-processing combinations. Statistical outliers were removed using the 1.5 × interquartile-range criterion. Because grains were subsampled from bulk seed lots rather than independently grown plants, the comparisons are exploratory and do not represent inference among biological replicates.
+
+- **S5 Table. Phenotypes and LSU500 genotypes of 147 F₂ plants from the IC206 × RU2002174 SG cross.** The population included 105 WT and 42 SG plants and was used to evaluate segregation and conduct the initial genome-wide marker-association analysis. The table reports grain phenotype and genotype calls for the 550 markers in the LSU500 panel. Marker quality-control and association results are provided in S7 Table.
+
+- **S6 Table. Grain phenotypes and segregation analysis of 100 F₂ plants from the Avant × RU2002174 SG cross.** Observed WT and SG phenotype counts used to compare with the 3:1 ratio expected for a single recessive locus using a chi-square goodness-of-fit test (expected: 75 WT and 25 SG; χ² = 0.21, df = 1, P = 0.644).
+
+- **S7 Table. LSU500 marker quality control and genome-wide association results for the short-grain phenotype.** Results are reported for the 265 markers retained from the LSU500 panel after filtering for call rate ≥0.80 and minor allele frequency >0.20 in the 147-plant IC206 × RU2002174 SG F₂ population. For each marker, the table provides marker-quality metrics, categorical logistic-regression results, McFadden’s pseudo-R², unadjusted P values, Bonferroni-adjusted P values, Benjamini–Hochberg-adjusted P values, and phenotype proportions by genotype class.
+
+- **S8a Table. Phenotypes and chromosome 5 marker genotypes of 1,031 F₂ plants used for initial recombinant mapping.** The table reports grain phenotype and marker genotypes for the expanded IC206 × RU2002174 SG F₂ population. Recombinant plants were identified from changes in parental marker haplotypes across chromosome 5 and were classified as single or double recombinants. These data supported initial localization of the SG locus between SNP5 and SNP7.
+
+- **S8b Table. Additional marker genotypes used to refine the short-grain locus within the SNP5–SNP7 interval.** Eight additional PACE markers were genotyped among informative F₂ recombinants within the chromosome 5 interval from 3.00 to 3.95 Mb. Recombinant breakpoints refined the SG locus to the approximately 233-kb interval between SNP5B and SNP6B.
+
+- **S8c Table. Recombinant F₂ genotypes and F₃ progeny-test results used for high-resolution mapping of the short-grain locus.** The table provides marker information, observed or inferred marker genotypes of 14 recombinant F₂ parents, F₂ phenotypes, F₃ family sizes, and WT and SG F₃ phenotype counts. F₂ marker genotypes were directly determined for nine parents and inferred from eight genotyped F₃ progeny for five parents. The combined recombinant and progeny-test results localized the SG locus to the 41.6-kb interval between SNP5B_6 and SNP5C_1 at chromosome 5 positions 3,189,947–3,231,570 bp.
+
+- **S9 Table. Sequencing summary statistics and candidate-site genotype metrics for the seven sequenced samples.** The table reports total reads, mapped-read percentage, mean coverage based on mapped bases, and genotype metrics at the candidate SRS3 variant at chromosome 5 position 3,204,936. Total reads represent individual reads rather than read pairs. Candidate-site metrics include genotype, variant-call depth, reference and alternate allele depths, and genotype quality.
+
+- **S10 Table. Pairwise SNP identity among the seven sequenced samples.** Pairwise identity was calculated from 2,985,920 genome-wide sites that were polymorphic among the seven samples after filtering for DP ≥10, GQ ≥30, and genotype calls in all samples. Genotype pairs sharing both alleles were scored 1.0, those sharing one allele 0.5, and those sharing no alleles 0.0. Values therefore represent relative SNP identity among samples rather than whole-genome sequence identity.
+
+- **S11 Table. Filtered SNPs and short indels within the fine-mapped chromosome 5 interval.** The table reports 213 variants retained between chromosome 5 positions 3,190,345 and 3,229,775 bp within the marker-defined interval of 3,189,947–3,231,570 bp after requiring depth ≥10, genotype quality ≥30, biallelic status, and genotype calls in all seven sequenced samples. Effects were predicted using SnpEff v4.3t and a custom database based on the Nipponbare IRGSP-1.0 reference genome and MSU Release 7 gene models. REF indicates homozygosity for the reference allele, ALT indicates homozygosity for the alternate allele, and HET indicates heterozygosity. The G→T substitution at position 3,204,936 was the only retained variant consistently distinguishing the WT- and SG-class samples.
+
+- **S12a Table. Candidate-variant genotypes and grain phenotypes of F₂ recombinants.** LSU1761 PACE genotype calls for the candidate G→T variant at chromosome 5 position 3,204,936 are reported with the grain phenotypes and mapping classifications of the recombinant F₂ plants. G:G indicates homozygosity for the WT allele, G:T or T:G indicates heterozygosity, and T:T indicates homozygosity for the SG-associated allele. Failed or ambiguous calls are identified.
+
+- **S12b Table. Candidate-variant survey of the Native Trait Panel.** The table provides accession identifiers, germplasm metadata, grain class, and LSU1761 PACE genotype calls for the candidate SRS3 variant at chromosome 5 position 3,204,936. G:G indicates homozygosity for the WT allele, G:T or T:G indicates heterozygosity, and T:T indicates homozygosity for the SG-associated allele. “No Amp” indicates failure to obtain a genotype call. Grain class describes the recognized grain type of each accession and does not indicate the RU2002174 SG phenotype.
+
+- **S13 Table. IRRI SNP-Seek regional query surrounding the candidate SRS3 variant on chromosome 5.** Regional SNP data were retrieved from the IRRI SNP-Seek 3K dataset for 3,024 accessions across chromosome 5 positions 3,204,800–3,205,000 bp. The query returned 12 variant positions, but the candidate position at 3,204,936 was not returned as a variant site. The table provides the returned SNP positions and accession-level allele calls. Blank cells indicate missing calls.
 
 ## Reproducibility
 
