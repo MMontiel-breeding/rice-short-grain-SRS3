@@ -6,9 +6,11 @@ This repository contains the data, metadata, supporting tables, and R scripts as
 
 The study characterizes a recessive short-grain (SG) phenotype identified in the long-grain wild-type (WT) rice breeding line RU2002174. The analyses include grain-morphology comparisons, phenotypic segregation, LSU500 marker association, recombinant fine-mapping, F3 progeny testing, whole-genome sequence analysis, candidate-variant identification, and evaluation of the candidate *SRS3* variant in additional rice germplasm.
 
-Supplementary tables retain the same numbering and nomenclature used in the manuscript. References to S1–S13 Tables in this repository therefore correspond directly to the Supporting Information cited in the manuscript. Additional datasets required to reproduce the reported analyses, but not included as Supporting Tables in the manuscript, are designated sequentially as Data S1, Data S2, etc., within this repository.
+Supplementary tables retain the same numbering and nomenclature used in the manuscript. In the repository, each Supporting Table is provided as an individual Excel file named according to its manuscript designation (e.g., `S1_Table.xlsx`, `S2_Table.xlsx`, `S8a_Table.xlsx`). The full title and description of each table are provided below and correspond directly to the Supporting Information cited in the manuscript. Additional datasets required to reproduce the reported analyses but not included as Supporting Tables in the manuscript are designated separately as Data D1, Data D2, etc.
 
-The repository and article Supporting Information provide the materials underlying the reported analyses, including: (do it as a paragrapah and check if I have everything): Grain-measurement data and quality-control records for rough, brown, and milled rice. F2 and F3 phenotypes and marker genotypes. Recombinant classifications and F3 progeny-test results used for fine-mapping. LSU500 and PACE marker metadata, genomic positions, alleles, and primer sequences, including the LSU1761 candidate-variant assay. Whole-genome sequencing metrics and candidate-site quality metrics. Filtered SNP and short-indel data from the chromosome 5 fine-mapped interval. The annotated interval-variant table used to identify the candidate G-to-T substitution at chromosome 5 position 3,204,936. Pairwise SNP identity results for the seven sequenced samples. Candidate-variant genotypes and phenotype-concordance results for F2 recombinants. Native Trait Panel survey results and the IRRI SNP-Seek 3K regional query. Statistical-analysis scripts used for the grain-morphology, segregation, and LSU500 association analyses.
+Required R packages are specified within each script. Scripts check for the packages required for the corresponding analysis before execution. Package installation is not performed automatically.
+
+The repository and article Supporting Information provide the data and metadata underlying the reported phenotypic, genetic-mapping, fine-mapping, candidate-variant, and sequencing analyses. These materials include grain-measurement data and associated quality-control records; F2 and F3 phenotypes and marker genotypes; recombinant classifications and F3 progeny-test results; LSU500 and PACE marker metadata, genomic positions, alleles, and primer sequences, including the LSU1761 candidate-variant assay; whole-genome sequencing and candidate-site metrics; filtered and annotated SNP and short-indel data from the fine-mapped chromosome 5 interval; pairwise SNP identity results for the seven sequenced samples; candidate-variant genotypes and phenotype-concordance results for F2 recombinants; Native Trait Panel survey results; IRRI SNP-Seek 3K regional query results; and the R scripts used for the reported grain-morphology, segregation, and LSU500 marker-association analyses.
 
 ## Repository contents
 
@@ -28,7 +30,9 @@ The repository and article Supporting Information provide the materials underlyi
 
 ### Data and supporting information
 
-S1 Data. Grain morphology measurements. Raw individual-grain measurements of length, width, and length-to-width ratio for rough, brown, and milled rice from wild-type (WT) and short-grain (SG) samples. These data are used as the input for the grain morphology quality-control and statistical analyses reported in S4 Table.
+- **Data D1. Grain morphology measurements.** Raw individual-grain measurements of length, width, and length-to-width ratio for rough, brown, and milled rice from wild-type (WT) and short-grain (SG) samples. These data are used as input for the grain morphology quality-control and statistical analyses reported in S4 Table.
+
+- **Data D2. Phenotypes of the complete 1,031-plant IC206 × RU2002174 SG F₂ population.** Plant identifiers and WT or SG grain-phenotype classifications used as input for the phenotypic segregation analysis of the complete F₂ population. The 1,031 plants include the initial 147-plant subset used for coarse mapping. Corresponding chromosome 5 marker genotypes and recombinant classifications are provided in S8a Table.
 
 ## Supporting tables
 
@@ -66,9 +70,11 @@ S1 Data. Grain morphology measurements. Raw individual-grain measurements of len
 
 ## Reproducibility
 
-The R scripts are numbered in the recommended order of use. Each script should be run with its corresponding input dataset available in the working directory or with the file path updated in the script. The scripts generate the statistical summaries and results reported in the manuscript and Supporting Information.
+The R scripts are numbered according to the analyses performed in the manuscript. Each script identifies its required input file and should be run from the repository root unless otherwise indicated. Required R packages are specified within each script, and package installation is not performed automatically.
 
-Analyses were conducted in R. Additional bioinformatic software and parameters used for sequence processing, alignment, variant calling, filtering, and annotation are documented in the manuscript Methods section.
+The scripts reproduce the statistical analyses and summaries reported in the manuscript and Supporting Information. Some scripts generate Supporting Tables as output files, whereas analyses for which no separate output file is required report the relevant statistics directly in the R console.
+
+Statistical analyses were conducted in R. Bioinformatic software, versions, filtering criteria, and parameters used for sequence processing, alignment, variant calling, filtering, and annotation are documented in the Materials and Methods section of the manuscript.
 
 ## Data availability
 
@@ -80,15 +86,11 @@ The repository will be archived through Zenodo after the final GitHub release.
 
 **Zenodo DOI:** To be added after repository archiving.
 
-Raw sequencing reads are associated with **NCBI BioProject PRJNA1472089**. Public accessibility of the BioProject should be confirmed before final submission.
-
 ## Citation
 
-Please cite the associated article when using these data or scripts. The complete journal citation and DOI will be added after publication.
+When using data or analysis scripts from this repository, please cite the associated manuscript:
 
-## License
-
-License information will be added before the final repository release.
+Montiel, M., Angira, B., Richards, J. K., & Famoso, A. Genetic mapping of a putative spontaneous short-grain mutation identifies a predicted loss-of-function allele of *SRS3* in rice. Manuscript submitted to PLOS ONE.
 
 ## Contact
 
