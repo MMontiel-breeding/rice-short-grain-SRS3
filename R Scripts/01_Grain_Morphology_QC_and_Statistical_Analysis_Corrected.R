@@ -31,7 +31,7 @@ suppressPackageStartupMessages({
   library(openxlsx)
 })
 
-input_file <- file.path("Data_D1_Grain_Morphology_Measurements.xlsx") # <- Input file # Input: raw individual-grain measurements
+input_file <- file.path("S1_Data_Grain_Morphology_Measurements.xlsx") # <- Input file # Input: raw individual-grain measurements
 if(!file.exists(input_file) && file.exists(basename(input_file))) input_file <- basename(input_file)
 
 output_dir <- "supplementary_information"
