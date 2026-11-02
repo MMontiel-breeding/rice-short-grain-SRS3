@@ -17,22 +17,30 @@ The repository and article Supporting Information provide the data and metadata 
 ### R scripts
 
 - `01_Grain_Morphology_QC_and_Statistical_Analysis_Corrected.R`  
-  Performs grain-measurement quality control, removes statistical outliers using Tukey's 1.5 x interquartile-range criterion, summarizes grain length, width, and length-to-width ratio, and compares WT and SG samples using Welch's t-tests with Benjamini-Hochberg adjustment.
+  Performs grain-measurement quality control, removes statistical outliers using Tukey's 1.5 × interquartile-range criterion, summarizes grain length, width, and length-to-width ratio, and compares WT and SG samples using two-sided Welch's t-tests with Benjamini-Hochberg adjustment.  
+  **Input:** S1 Data (raw grain morphology measurements).  
+  **Output:** S4 Table (grain morphology statistics and quality-control results).
 
 - `02_F2_147_Segregation_and_LSU500_Association_Analysis.R`  
-  Evaluates 3:1 phenotypic segregation in the initial 147-plant IC206 x RU2002174 SG F2 population and conducts LSU500 single-marker association analysis using logistic-regression likelihood-ratio tests, Bonferroni and Benjamini-Hochberg corrections, McFadden's pseudo-R2, and phenotype proportions by genotype class.
+  Evaluates 3:1 phenotypic segregation in the initial 147-plant IC206 × RU2002174 SG F₂ population and conducts LSU500 single-marker association analysis using logistic-regression likelihood-ratio tests, Bonferroni and Benjamini-Hochberg corrections, McFadden's pseudo-R², and phenotype proportions by genotype class.  
+  **Inputs:** S1 Table (LSU500 marker information) and S5 Table (phenotypes and LSU500 genotypes of the 147 F₂ plants).  
+  **Outputs:** Segregation results reported in S5 Table; LSU500 marker quality-control and association results reported in S7 Table; and the association results represented in S1 Fig.
 
 - `03_Avant_F2_Phenotypic_Segregation_Analysis.R`  
-  Evaluates phenotypic segregation in the 100-plant Avant x RU2002174 SG F2 population using a chi-square goodness-of-fit test for the expected 3:1 WT:SG ratio.
+  Evaluates phenotypic segregation in the 100-plant Avant × RU2002174 SG F₂ population using a chi-square goodness-of-fit test for the expected 3:1 WT:SG ratio.  
+  **Input:** S6 Table (Avant × RU2002174 SG F₂ phenotypes).  
+  **Output:** Chi-square segregation statistics displayed in the R console and reported in S6 Table and the manuscript.
 
 - `04_F2_Complete1031_Phenotypic_Segregation_Analysis.R`  
-  Evaluates phenotypic segregation in the complete 1,031-plant IC206 x RU2002174 SG F2 population using a chi-square goodness-of-fit test for the expected 3:1 WT:SG ratio.
+  Evaluates phenotypic segregation in the complete 1,031-plant IC206 × RU2002174 SG F₂ population using a chi-square goodness-of-fit test for the expected 3:1 WT:SG ratio.  
+  **Input:** S2 Data (phenotypes of the complete 1,031-plant F₂ population).  
+  **Output:** Chi-square segregation statistics displayed in the R console and reported in the manuscript.
 
 ### Data and supporting information
 
-- **Data D1. Grain morphology measurements.** Raw individual-grain measurements of length, width, and length-to-width ratio for rough, brown, and milled rice from wild-type (WT) and short-grain (SG) samples. These data are used as input for the grain morphology quality-control and statistical analyses reported in S4 Table.
+- **S1 Data. Grain morphology measurements.** Raw individual-grain measurements of length, width, and length-to-width ratio for rough, brown, and milled rice from wild-type (WT) and short-grain (SG) samples. These data are used as input for the grain morphology quality-control and statistical analyses reported in S4 Table.
 
-- **Data D2. Phenotypes of the complete 1,031-plant IC206 × RU2002174 SG F₂ population.** Plant identifiers and WT or SG grain-phenotype classifications used as input for the phenotypic segregation analysis of the complete F₂ population. The 1,031 plants include the initial 147-plant subset used for coarse mapping. Corresponding chromosome 5 marker genotypes and recombinant classifications are provided in S8a Table.
+- **S2 Data. Phenotypes of the complete 1,031-plant IC206 × RU2002174 SG F₂ population.** Plant identifiers and WT or SG grain-phenotype classifications used as input for the phenotypic segregation analysis of the complete F₂ population. The 1,031 plants include the initial 147-plant subset used for coarse mapping. Corresponding chromosome 5 marker genotypes and recombinant classifications are provided in S8a Table.
 
 ## Supporting tables
 
@@ -76,15 +84,9 @@ The scripts reproduce the statistical analyses and summaries reported in the man
 
 Statistical analyses were conducted in R. Bioinformatic software, versions, filtering criteria, and parameters used for sequence processing, alignment, variant calling, filtering, and annotation are documented in the Materials and Methods section of the manuscript.
 
-## Data availability
+## License
 
-Data and analysis scripts are available in this GitHub repository:
-
-https://github.com/MMontiel-breeding/rice-short-grain-SRS3
-
-The repository will be archived through Zenodo after the final GitHub release.
-
-**Zenodo DOI:** To be added after repository archiving.
+The author-generated R analysis scripts in this repository are licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Citation
 
