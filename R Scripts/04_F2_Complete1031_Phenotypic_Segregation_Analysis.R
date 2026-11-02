@@ -28,7 +28,7 @@ library(stringr)
 library(ggplot2)
 
 # 2 | ANALYSIS SETTINGS --------------------------------------------------------
-input_file <- "Data_D2_Complete_1031_F2_Phenotypes.xlsx"
+input_file <- "S2_Data_Complete_1031_F2_Phenotypes.xlsx"
 input_sheet <- "Sheet1"
 expected_total_records <- 1031L  # -> Use the finalized file without the four unclassified records.
 
