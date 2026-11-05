@@ -84,6 +84,9 @@ The scripts reproduce the statistical analyses and summaries reported in the man
 
 Statistical analyses were conducted in R. Bioinformatic software, versions, filtering criteria, and parameters used for sequence processing, alignment, variant calling, filtering, and annotation are documented in the Materials and Methods section of the manuscript.
 
+## Data availability
+Data and analysis scripts are publicly available through this GitHub repository. The version associated with the manuscript is permanently archived in Zenodo at https://doi.org/10.5281/zenodo.23892464.
+
 ## License
 
 The author-generated R analysis scripts in this repository are licensed under the MIT License. See the `LICENSE` file for details.
